@@ -161,14 +161,6 @@ class InputGraph extends CanvasElement {
     this.objs = [];
     this.links = [];
 
-    this.value = [
-      { s: "ねこ", p: "is_a", o: "animal" },
-      { s: "dag", p: "is_a", o: "animal" },
-      { s: "animal", p: "is_a", o: "lives" },
-    ];
-    
-    //this.value = [ { s: "cat", p: "", o: "cat" } ];
-
     const f = () => {
       tickSpace(this.objs, this.bkw, this.bkh);
       this.redraw();

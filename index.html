@@ -1,20 +1,23 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
-<script type="module" src="./input-graph.js"></script>
 <body style="text-align:center">
 
 <h1>input-graphα tag</h1>
-<input-graph id="inputgraph" style="width:80vw;height:300px"></input-graph><br>
-<textarea id="chk" style="width:80vw;height:8em">s,o
+<script type="module" src="./input-graph.js"></script>
+<input-graph id="inputgraph" style="width:50vw;height:300px"></input-graph>
+
+<script type="module" src="https://code4fukui.github.io/input-table/input-table.js"></script>
+<input-table id="chk">s,o
 cat,animal
 dog,animal
 animal,lives
-</textarea>
+</input-table>
 
 <script type="module">
 inputgraph.value = chk.value;
 chk.onchange = () => {
   inputgraph.value = chk.value;
 };
+
 /*
 inputgraph.onchange = () => {
   console.log(inputgraph.value);
@@ -22,6 +25,13 @@ inputgraph.onchange = () => {
 };
 inputgraph.value = "a,b,2021-05-05";
 console.log(inputgraph.value);
+
+<textarea id="chk" style="width:80vw;height:8em">s,o
+cat,animal
+dog,animal
+animal,lives
+</textarea>
+
 */
 </script>
 
