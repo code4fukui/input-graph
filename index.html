@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<script type="module" src="./input-graph.js"></script>
+<body style="text-align:center">
+
+<h1>input-graphα tag</h1>
+<input-graph id="inputgraph" style="width:80vw;height:300px"></input-graph><br>
+<textarea id="chk" style="width:80vw;height:8em">s,o
+cat,animal
+dog,animal
+animal,lives
+</textarea>
+
+<script type="module">
+inputgraph.value = chk.value;
+chk.onchange = () => {
+  inputgraph.value = chk.value;
+};
+/*
+inputgraph.onchange = () => {
+  console.log(inputgraph.value);
+  chk.value = inputgraph.value;
+};
+inputgraph.value = "a,b,2021-05-05";
+console.log(inputgraph.value);
+*/
+</script>
+
+</body>
