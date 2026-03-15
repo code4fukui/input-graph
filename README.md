@@ -1,5 +1,7 @@
 # input-graph
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 Interactive graph visualization component for creating and editing relationships.
 
 ## Demo
