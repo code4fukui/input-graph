@@ -32,4 +32,4 @@ mygraph.value = "s,o\ncat,animal\ndog,animal\nanimal,lives";
 The data should be in CSV format with `s` and `o` columns representing the source and destination nodes.
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
